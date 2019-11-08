@@ -1,0 +1,10 @@
+/home/hja/Project/spring-rest-client/src/main/java/com/europcar/error/BookApiUnavailableException.java
+/home/hja/Project/spring-rest-client/src/main/java/com/europcar/BookClient.java
+/home/hja/Project/spring-rest-client/src/main/java/com/europcar/StartBookApplication.java
+/home/hja/Project/spring-rest-client/src/main/java/com/europcar/BookList.java
+/home/hja/Project/spring-rest-client/src/main/java/com/europcar/BookService.java
+/home/hja/Project/spring-rest-client/src/main/java/com/europcar/error/CustomGlobalExceptionHandler.java
+/home/hja/Project/spring-rest-client/src/main/java/com/europcar/error/BookNotFoundException.java
+/home/hja/Project/spring-rest-client/src/main/java/com/europcar/BookController.java
+/home/hja/Project/spring-rest-client/src/main/java/com/europcar/Book.java
+/home/hja/Project/spring-rest-client/src/main/java/com/europcar/error/BookUnSupportedFieldPatchException.java

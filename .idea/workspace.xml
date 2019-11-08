@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d36c07de-25f4-4eba-8049-1456fdf67f4a" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Arquillian JUnit Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadSourcesAutomatically" value="true" />
+        <option name="importAutomatically" value="true" />
+        <option name="lookForNested" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1TDDbnYawtk3Nv6KhybHuFu1T0z" />
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.europcar" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.europcar.error" />
+      <recent name="com.europcar" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.europcar" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.BookControllerWireMockIntTest">
+    <configuration name="BookControllerIntTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-rest-hello-world" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.europcar.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.europcar" />
+      <option name="MAIN_CLASS_NAME" value="com.europcar.BookControllerIntTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookControllerIntTest.discountAllBook_shouldDiscountPrice_10Percent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-rest-hello-world" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.europcar.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.europcar" />
+      <option name="MAIN_CLASS_NAME" value="com.europcar.BookControllerIntTest" />
+      <option name="METHOD_NAME" value="discountAllBook_shouldDiscountPrice_10Percent" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookControllerWireMockIntTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-rest-hello-world" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.europcar.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.europcar" />
+      <option name="MAIN_CLASS_NAME" value="com.europcar.BookControllerWireMockIntTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookControllerWireMockIntTest.discountAllBook_shouldDiscountPrice_10Percent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-rest-hello-world" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.europcar.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.europcar" />
+      <option name="MAIN_CLASS_NAME" value="com.europcar.BookControllerWireMockIntTest" />
+      <option name="METHOD_NAME" value="discountAllBook_shouldDiscountPrice_10Percent" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookControllerWireMockIntTest.discountAllBook_shouldDiscountPrice_WhenExternalApiIsUnavailable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-rest-hello-world" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.europcar.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.europcar" />
+      <option name="MAIN_CLASS_NAME" value="com.europcar.BookControllerWireMockIntTest" />
+      <option name="METHOD_NAME" value="discountAllBook_shouldDiscountPrice_WhenExternalApiIsUnavailable" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StartBookApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-rest-hello-world" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.europcar.StartBookApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BookControllerWireMockIntTest" />
+        <item itemvalue="JUnit.BookControllerWireMockIntTest.discountAllBook_shouldDiscountPrice_10Percent" />
+        <item itemvalue="JUnit.BookControllerWireMockIntTest.discountAllBook_shouldDiscountPrice_WhenExternalApiIsUnavailable" />
+        <item itemvalue="JUnit.BookControllerIntTest" />
+        <item itemvalue="JUnit.BookControllerIntTest.discountAllBook_shouldDiscountPrice_10Percent" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d36c07de-25f4-4eba-8049-1456fdf67f4a" name="Default Changelist" comment="" />
+      <created>1572985846924</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1572985846924</updated>
+      <workItem from="1572985848541" duration="135000" />
+      <workItem from="1572986037537" duration="1043000" />
+      <workItem from="1573030177361" duration="19204000" />
+      <workItem from="1573115606786" duration="9893000" />
+      <workItem from="1573133577819" duration="78000" />
+      <workItem from="1573134562361" duration="2438000" />
+      <workItem from="1573141723149" duration="5019000" />
+      <workItem from="1573204292151" duration="2518000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/europcar/BookService.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="result.andExpect(content().contentTypeCompatibleWith(MediaType.ALL)).andReturn();" language="JAVA" />
+        <watch expression="result.andReturn().getResponse().getContentAsString();" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
