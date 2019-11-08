@@ -4,7 +4,6 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.tomakehurst.wiremock.client.WireMock;
 import com.github.tomakehurst.wiremock.junit.WireMockRule;
-import com.github.tomakehurst.wiremock.stubbing.Scenario;
 import org.junit.*;
 import org.junit.runner.RunWith;
 import org.skyscreamer.jsonassert.JSONCompareMode;
@@ -22,7 +21,6 @@ import java.util.Arrays;
 import java.util.List;
 
 import static com.github.tomakehurst.wiremock.client.WireMock.*;
-import static com.github.tomakehurst.wiremock.client.WireMock.aResponse;
 import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;
 import static org.skyscreamer.jsonassert.JSONAssert.assertEquals;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
@@ -45,17 +43,17 @@ public class BookControllerWireMockIntTest {
     public WireMockRule wireMockRule = new WireMockRule(8080);
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         //String bookPort = valueOf(((ServerConnector) bookServer.getConnectors()[0]).getLocalPort());
         mockMvc = MockMvcBuilders.webAppContextSetup(webApplicationContext).build();
     }
 
     @AfterClass
-    public static void stopServer() throws Exception {
+    public static void stopServer() {
     }
 
     @BeforeClass
-    public static void startServer() throws Exception {
+    public static void startServer() {
 
     }
 
@@ -97,7 +95,7 @@ public class BookControllerWireMockIntTest {
     }
 
     @Test
-    public void discountAllBook_shouldDiscountPrice_WhenExternalApiIsUnavailable() throws Exception {
+    public void discountAllBook_shouldReturn503_WhenExternalApiIsUnavailable() throws Exception {
         //given
         stubFor(WireMock.get(urlPathMatching("/books"))
                 .willReturn(aResponse()
@@ -110,6 +108,42 @@ public class BookControllerWireMockIntTest {
         ResultActions result = mockMvc.perform(get("/books/discount/10"));
 
         //then
+        int status = result.andReturn().getResponse().getStatus();
+        assertThat(status).isEqualTo(503);
+    }
+
+    @Test
+    public void discountAllBook_shouldReturn503_WhenTimeout() throws Exception {
+        //given
+        List<Book> books = Arrays.asList(buildBook(2L, 100), buildBook(1L, 10));
+        /*String jsonResponseApi = "[ " +
+                "   { " +
+                "      \"id\":2," +
+                "      \"name\":\"name\"," +
+                "      \"author\":\"author\"," +
+                "      \"price\":90" +
+                "   }," +
+                "   { " +
+                "      \"id\":1," +
+                "      \"name\":\"name\"," +
+                "      \"author\":\"author\"," +
+                "      \"price\":9" +
+                "   }" +
+                "]";*/
+
+        String jsonResponseExternalApi = getJsonFromObject(books);
+        stubFor(WireMock.get(urlPathMatching("/books"))
+                .willReturn(aResponse()
+                        .withStatus(200)
+                        .withHeader("Content-Type", "application/json")
+                        .withBody(jsonResponseExternalApi)
+                        .withFixedDelay(2000))); //fixed delay to simulate timeout
+
+        //when
+        ResultActions result = mockMvc.perform(get("/books/discount/10"));
+
+        //then
+        verify(1, getRequestedFor(urlEqualTo("/books")));
         int status = result.andReturn().getResponse().getStatus();
         assertThat(status).isEqualTo(503);
     }
