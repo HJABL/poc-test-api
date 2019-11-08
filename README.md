@@ -17,9 +17,7 @@ https://github.com/HJABL/poc-test-api/blob/master/src/test/java/com/europcar/Boo
 
 ## 1. How to start
 ```
-$ git clone https://github.com/mkyong/spring-boot.git
-$ cd spring-rest-hello-world
 $ mvn spring-boot:run
 
-$ curl -v localhost:8080/books
+$ curl -v localhost:8080/books/10
 ```
