@@ -17,10 +17,10 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
 import java.math.BigDecimal;
-import java.util.Arrays;
 import java.util.List;
 
 import static com.github.tomakehurst.wiremock.client.WireMock.*;
+import static java.util.Arrays.asList;
 import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;
 import static org.skyscreamer.jsonassert.JSONAssert.assertEquals;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
@@ -60,8 +60,8 @@ public class BookControllerWireMockIntTest {
     @Test
     public void discountAllBook_shouldDiscountPrice_10Percent() throws Exception {
         //given
-        List<Book> books = Arrays.asList(buildBook(2L, 100), buildBook(1L, 10));
-        List<Book> expectedBooks = Arrays.asList(buildBook(2L, 90), buildBook(1L, 9));
+        List<Book> books = asList(buildBook(2L, 100), buildBook(1L, 10));
+        List<Book> expectedBooks = asList(buildBook(2L, 90), buildBook(1L, 9));
         String jsonResponseApi = mapper.writeValueAsString(expectedBooks);
         /*String jsonResponseApi = "[ " +
                 "   { " +
@@ -115,7 +115,7 @@ public class BookControllerWireMockIntTest {
     @Test
     public void discountAllBook_shouldReturn503_WhenTimeout() throws Exception {
         //given
-        List<Book> books = Arrays.asList(buildBook(2L, 100), buildBook(1L, 10));
+        List<Book> books = asList(buildBook(2L, 100), buildBook(1L, 10));
         /*String jsonResponseApi = "[ " +
                 "   { " +
                 "      \"id\":2," +
